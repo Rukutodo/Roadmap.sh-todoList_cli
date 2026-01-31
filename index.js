@@ -31,6 +31,9 @@ async function operation(operation,pos,description) {
     console.log("Calling Delete Operation");
     del(pos);
   }
+  else if(operation === 'find'){
+    find(pos);
+  }
   else if(operation === 'list'){
     
     try {
@@ -101,4 +104,19 @@ async function del(pos){
 
   await writeFile(DATA_FILE,JSON.stringify(json,null,2));
   displayList();
+}
+
+async function find(pos) {
+  const data = await readFile(DATA_FILE,'utf8');
+  const json = JSON.parse(data);
+  let field = "";
+  let status = pos;
+  if (status?.includes("=")) {
+    const[attr, value] = status.split("=");
+    field = attr;
+    status = value;
+  }
+  console.log(field,status);
+  const display = json.todos.filter(t => t[field] === status );
+  console.table(display);
 }
