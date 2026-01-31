@@ -1,5 +1,7 @@
 # CLI Task Tracker
 
+This project is an implementation of the [Task Tracker](https://roadmap.sh/projects/task-tracker) project from [roadmap.sh](https://roadmap.sh).
+
 A simple command-line interface application to manage your tasks efficiently.
 
 ## Prerequisites
