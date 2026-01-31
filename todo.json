@@ -1,0 +1,32 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "description": "Completed CRU operations",
+      "status": "completed",
+      "createdAt": "1/2/2026, 12:42:13 am",
+      "modifiedAt": "1/2/2026, 12:42:48 am"
+    },
+    {
+      "id": 2,
+      "description": "Test1",
+      "status": "in progress",
+      "createdAt": "1/2/2026, 1:00:09 am",
+      "modifiedAt": "1/2/2026, 1:00:09 am"
+    },
+    {
+      "id": 3,
+      "description": "Test2",
+      "status": "in progress",
+      "createdAt": "1/2/2026, 1:00:20 am",
+      "modifiedAt": "1/2/2026, 1:00:20 am"
+    },
+    {
+      "id": 4,
+      "description": "calling list automatically after every operation",
+      "status": "completed",
+      "createdAt": "1/2/2026, 1:02:35 am",
+      "modifiedAt": "1/2/2026, 1:02:55 am"
+    }
+  ]
+}
