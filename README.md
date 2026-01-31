@@ -64,12 +64,12 @@ node index.js delete <id>
 Search for tasks based on specific fields (like `status`).
 
 ```bash
-node index.js find <field>=<value>
+node index.js find "<field>=<value>"
 ```
 
 Example:
 ```bash
-node index.js find status=in progress
+node index.js find "status=in progress"
 ```
 
 ## Data Storage
